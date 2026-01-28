@@ -26,4 +26,25 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
 
 ## How to use
 
+
 Each skill folder contains a SKILL.md file with instructions and any supporting scripts or resources for that skill.
+
+## Add skills to your project (one-liners)
+
+Run these from the folder where you want the skill folders to appear.
+
+### macOS/Linux
+
+curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.codex" "favorite-skills-main/.github"
+
+### Windows PowerShell
+
+iwr https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz -OutFile repo.tgz; tar -xzf repo.tgz --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.codex" "favorite-skills-main/.github"; rm repo.tgz
+
+### Windows CMD
+
+curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz -o repo.tgz && tar -xzf repo.tgz --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.codex" "favorite-skills-main/.github" && del repo.tgz
+
+Notes:
+- The folders are hidden; use ls -a on macOS/Linux or dir /a on Windows to verify.
+- If the default branch changes, replace main in the URL accordingly.
