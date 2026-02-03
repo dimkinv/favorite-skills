@@ -13,6 +13,14 @@ const destinationRoots = [
 
 const requestedSkills = process.argv.slice(2);
 
+if (requestedSkills.includes("-h") || requestedSkills.includes("--help")) {
+  console.log(`Usage:
+  ./scripts/clone-skills.js [skill-name ...]
+  node ./scripts/clone-skills.js [skill-name ...]
+`);
+  process.exit(0);
+}
+
 async function listSkillDirs(rootDir) {
   const entries = await fs.readdir(rootDir, { withFileTypes: true });
   return entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name);
