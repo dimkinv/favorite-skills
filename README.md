@@ -13,7 +13,7 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
   - Location: .github/skills/docx
 
 - **skills-cloner**
-  - Description: Sync skills from .github/skills into .codex/skills and .claude/skills after any skill is created, updated, or deleted. Run .github/skills/skills-cloner/scripts/clone-skills.js to align folders.
+  - Description: Sync skills from .github/skills into .agents/skills and .claude/skills after any skill is created, updated, or deleted. Run .github/skills/skills-cloner/scripts/clone-skills.js to align folders.
   - Location: .github/skills/skills-cloner
 
 - **skill-creator**
@@ -40,19 +40,19 @@ Run these from the folder where you want the skill folders to appear.
 ### macOS/Linux
 
 ```
-curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.codex" "favorite-skills-main/.github"
+curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz | tar -xzf - --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.agents" "favorite-skills-main/.github"
 ```
 
 ### Windows PowerShell
 
 ```
-iwr https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz -OutFile repo.tgz; tar -xzf repo.tgz --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.codex" "favorite-skills-main/.github"; rm repo.tgz
+iwr https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz -OutFile repo.tgz; tar -xzf repo.tgz --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.agents" "favorite-skills-main/.github"; rm repo.tgz
 ```
 
 ### Windows CMD
 
 ```
-curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz -o repo.tgz && tar -xzf repo.tgz --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.codex" "favorite-skills-main/.github" && del repo.tgz
+curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.gz -o repo.tgz && tar -xzf repo.tgz --strip-components=1 "favorite-skills-main/.claude" "favorite-skills-main/.agents" "favorite-skills-main/.github" && del repo.tgz
 ```
 
 Notes:
