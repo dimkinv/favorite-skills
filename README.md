@@ -13,7 +13,7 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
   - Location: .github/skills/docx
 
 - **skills-cloner**
-  - Description: Sync skills from .github/skills into .codex/skills and .claude/skills after any skill is created, updated, or deleted. Run ./scripts/clone-skills.js directly to align folders.
+  - Description: Sync skills from .github/skills into .codex/skills and .claude/skills after any skill is created, updated, or deleted. Run .github/skills/skills-cloner/scripts/clone-skills.js to align folders.
   - Location: .github/skills/skills-cloner
 
 - **skill-creator**
@@ -23,6 +23,10 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
 - **skill-installer**
   - Description: Install a skill from a GitHub URL that points to a skill folder by downloading it into .github/skills.
   - Location: .github/skills/skill-installer
+
+- **skeleton-generator**
+  - Description: Create minimal TypeScript project skeletons for backend (Node.js), React (Vite), or Next.js with deps, file tree, and AGENTS.md handling.
+  - Location: .github/skills/skeleton-generator
 
 ## How to use
 
