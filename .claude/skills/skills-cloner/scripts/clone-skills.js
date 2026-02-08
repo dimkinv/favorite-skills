@@ -7,7 +7,7 @@ const crypto = require("crypto");
 const repoRoot = path.resolve(__dirname, "../../../..");
 const sourceRoot = path.join(repoRoot, ".github/skills");
 const destinationRoots = [
-  path.join(repoRoot, ".codex/skills"),
+  path.join(repoRoot, ".agents/skills"),
   path.join(repoRoot, ".claude/skills"),
 ];
 

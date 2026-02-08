@@ -5,7 +5,7 @@ description: Sync skills from .github/skills into .agents/skills and .claude/ski
 
 # Skills Cloner
 
-- After any skill create, update, or delete, run ./scripts/clone-skills.js to sync .agents/skills and .claude/skills.
+- After any skill create, update, or delete, run .github/skills/skills-cloner/scripts/clone-skills.js to sync .agents/skills and .claude/skills.
 - Compare skill folder contents and rewrite only changed skills.
 - Remove skill folders from .agents/skills and .claude/skills that no longer exist in .github/skills.
 - Optionally pass one or more skill names to limit syncing.
@@ -14,5 +14,5 @@ description: Sync skills from .github/skills into .agents/skills and .claude/ski
 
 The script is executable and can be run directly (no need to prefix with `node`).
 
-- ./scripts/clone-skills.js
-- ./scripts/clone-skills.js skill-name another-skill
+- .github/skills/skills-cloner/scripts/clone-skills.js
+- .github/skills/skills-cloner/scripts/clone-skills.js skill-name another-skill
