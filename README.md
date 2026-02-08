@@ -12,6 +12,10 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
   - Description: Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction.
   - Location: .github/skills/docx
 
+- **markdown-to-pdf**
+  - Description: Create a PDF from a local Markdown file using a local Python script (no remote services).
+  - Location: .github/skills/markdown-to-pdf
+
 - **skills-cloner**
   - Description: Sync skills from .github/skills into .agents/skills and .claude/skills after any skill is created, updated, or deleted. Run .github/skills/skills-cloner/scripts/clone-skills.js to align folders.
   - Location: .github/skills/skills-cloner
