@@ -13,7 +13,7 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
   - Location: .github/skills/docx
 
 - **markdown-to-pdf**
-  - Description: Create a PDF from a local Markdown file using a local Python script (no remote services).
+  - Description: Create a PDF from a local Markdown file using a local Python script (no remote services). Default body font size is 11pt.
   - Location: .github/skills/markdown-to-pdf
 
 - **skills-cloner**

@@ -18,7 +18,7 @@ def build_html(markdown_text: str) -> str:
         "<head>\n"
         "<meta charset=\"utf-8\">\n"
         "<style>\n"
-        "body { font-family: serif; font-size: 12pt; line-height: 1.5; }\n"
+        "body { font-family: serif; font-size: 11pt; line-height: 1.5; }\n"
         "code, pre { font-family: monospace; }\n"
         "pre { white-space: pre-wrap; }\n"
         "table { border-collapse: collapse; }\n"
