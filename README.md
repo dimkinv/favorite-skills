@@ -21,7 +21,7 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
   - Location: .github/skills/skills-cloner
 
 - **skill-creator**
-  - Description: Create, update, and package Agent Skills. Use when asked to design a new skill, refine an existing skill, or set up the required SKILL.md structure, frontmatter, and resources.
+  - Description: Create, update, and package Agent Skills in the same skills folder where the skill-creator instructions live.
   - Location: .github/skills/skill-creator
 
 - **skill-installer**

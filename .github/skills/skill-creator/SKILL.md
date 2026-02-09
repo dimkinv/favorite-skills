@@ -26,7 +26,7 @@ Only include what is truly necessary. Do not add extra documentation files.
 ## 3) Create the skill directory
 
 - Use lowercase with hyphens for the directory name.
-- Place it under .github/skills/<skill-name>.
+- Place it under the skills folder where this SKILL.md lives (same root as this skill).
 
 ## 4) Write SKILL.md
 
