@@ -8,17 +8,13 @@ This repository contains reusable Agent Skills stored under `.github/skills`.
   - Description: Agent-first persistent memory for storing, retrieving, and maintaining human-readable notes across conversations. The agent should proactively capture important decisions and work completed; users can also ask to remember, save, note, recall, remind, or review prior work.
   - Location: .github/skills/agent-memory
 
-- **docx**
-  - Description: Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction.
-  - Location: .github/skills/docx
-
 - **markdown-to-pdf**
   - Description: Create a PDF from a local Markdown file using a local Python script (no remote services). Default body font size is 11pt.
   - Location: .github/skills/markdown-to-pdf
 
-- **skills-cloner**
-  - Description: Sync skills from .github/skills into .agents/skills and .claude/skills after any skill is created, updated, or deleted. Run .github/skills/skills-cloner/scripts/clone-skills.js to align folders.
-  - Location: .github/skills/skills-cloner
+- **reviewer-process**
+  - Description: Run when the user asks for a review; use git CLI to list staged and unstaged changes, read GUIDELINES.md in this skill folder, produce a fix list, and offer to apply fixes after confirmation.
+  - Location: .github/skills/reviewer-process
 
 - **skill-creator**
   - Description: Create, update, and package Agent Skills in the same skills folder where the skill-creator instructions live.
@@ -61,4 +57,5 @@ curl -L https://github.com/dimkinv/favorite-skills/archive/refs/heads/main.tar.g
 
 Notes:
 - The folders are hidden; use ls -a on macOS/Linux or dir /a on Windows to verify.
+- `.agents/skills` and `.claude/skills` are relative links to `.github/skills`.
 - If the default branch changes, replace main in the URL accordingly.
